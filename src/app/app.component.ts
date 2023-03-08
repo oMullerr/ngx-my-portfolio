@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
 
 @Component({
   selector: 'app-root',
@@ -7,12 +6,8 @@ import { NgbModal } from '@ng-bootstrap/ng-bootstrap';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ngx-my-portfolio';
+  title = 'My-portfolio';
 
-  constructor(private modalService: NgbModal) {
-  }
+  shouldRun = /(^|.)(stackblitz|webcontainer).(io|com)$/.test(window.location.host);
 
-  public open(modal: any): void {
-    this.modalService.open(modal);
-  }
 }
