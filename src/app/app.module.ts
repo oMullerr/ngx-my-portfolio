@@ -6,15 +6,15 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home/home.component';
 import {MatSidenavModule} from '@angular/material/sidenav';
-import { BSideMenuComponent } from 'src/shared/components/b-side-menu/b-side-menu.component';
 import {MatCheckboxModule} from '@angular/material/checkbox';
 import {MatIconModule} from '@angular/material/icon';
+import { HeaderComponent } from 'src/shared/components/header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    BSideMenuComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
